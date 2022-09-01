@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1662020623">
+  <project timestamp="1662020623">
+    <file name="/home/runner/work/cms-layout-graphite/cms-layout-graphite/src/Extension/ComponentHelperExtension.php">
+      <class name="Apie\CmsLayoutGraphite\Extension\ComponentHelperExtension" namespace="global">
+        <metrics complexity="12" methods="9" coveredmethods="6" conditionals="0" coveredconditionals="0" statements="20" coveredstatements="17" elements="29" coveredelements="23"/>
+      </class>
+      <line num="18" type="method" name="selectComponent" visibility="public" complexity="1" crap="1" count="11"/>
+      <line num="20" type="stmt" count="11"/>
+      <line num="21" type="stmt" count="11"/>
+      <line num="24" type="method" name="deselectComponent" visibility="public" complexity="2" crap="2.06" count="11"/>
+      <line num="26" type="stmt" count="11"/>
+      <line num="27" type="stmt" count="0"/>
+      <line num="29" type="stmt" count="11"/>
+      <line num="30" type="stmt" count="11"/>
+      <line num="33" type="method" name="getFunctions" visibility="public" complexity="1" crap="1" count="3"/>
+      <line num="36" type="stmt" count="3"/>
+      <line num="37" type="stmt" count="3"/>
+      <line num="38" type="stmt" count="3"/>
+      <line num="39" type="stmt" count="3"/>
+      <line num="43" type="method" name="getCurrentRenderer" visibility="private" complexity="2" crap="2.15" count="2"/>
+      <line num="45" type="stmt" count="2"/>
+      <line num="46" type="stmt" count="0"/>
+      <line num="48" type="stmt" count="2"/>
+      <line num="51" type="method" name="getCurrentComponent" visibility="private" complexity="2" crap="2.15" count="10"/>
+      <line num="53" type="stmt" count="10"/>
+      <line num="54" type="stmt" count="0"/>
+      <line num="56" type="stmt" count="10"/>
+      <line num="59" type="method" name="assetContent" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="61" type="stmt" count="1"/>
+      <line num="64" type="method" name="assetUrl" visibility="public" complexity="1" crap="1" count="2"/>
+      <line num="66" type="stmt" count="2"/>
+      <line num="69" type="method" name="property" visibility="public" complexity="1" crap="1" count="10"/>
+      <line num="71" type="stmt" count="10"/>
+      <line num="74" type="method" name="component" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="76" type="stmt" count="1"/>
+      <metrics loc="79" ncloc="77" classes="1" methods="9" coveredmethods="6" conditionals="0" coveredconditionals="0" statements="20" coveredstatements="17" elements="29" coveredelements="23"/>
+    </file>
+    <file name="/home/runner/work/cms-layout-graphite/cms-layout-graphite/src/GraphiteDesignSystemLayout.php">
+      <class name="Apie\CmsLayoutGraphite\GraphiteDesignSystemLayout" namespace="global">
+        <metrics complexity="2" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="4" elements="5" coveredelements="5"/>
+      </class>
+      <line num="12" type="method" name="createRenderer" visibility="public" complexity="1" crap="1" count="11"/>
+      <line num="14" type="stmt" count="11"/>
+      <line num="15" type="stmt" count="11"/>
+      <line num="16" type="stmt" count="11"/>
+      <line num="17" type="stmt" count="11"/>
+      <metrics loc="21" ncloc="21" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="4" elements="5" coveredelements="5"/>
+    </file>
+    <file name="/home/runner/work/cms-layout-graphite/cms-layout-graphite/src/TwigRenderer.php">
+      <class name="Apie\CmsLayoutGraphite\TwigRenderer" namespace="global">
+        <metrics complexity="6" methods="4" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="15" coveredstatements="14" elements="19" coveredelements="17"/>
+      </class>
+      <line num="20" type="method" name="__construct" visibility="public" complexity="2" crap="2" count="11"/>
+      <line num="22" type="stmt" count="11"/>
+      <line num="23" type="stmt" count="11"/>
+      <line num="24" type="stmt" count="11"/>
+      <line num="25" type="stmt" count="1"/>
+      <line num="27" type="stmt" count="11"/>
+      <line num="30" type="method" name="getAssetContents" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="32" type="stmt" count="1"/>
+      <line num="35" type="method" name="getAssetUrl" visibility="public" complexity="1" crap="1" count="2"/>
+      <line num="37" type="stmt" count="2"/>
+      <line num="40" type="method" name="render" visibility="public" complexity="2" crap="2.01" count="11"/>
+      <line num="42" type="stmt" count="11"/>
+      <line num="43" type="stmt" count="11"/>
+      <line num="44" type="stmt" count="0"/>
+      <line num="46" type="stmt" count="11"/>
+      <line num="48" type="stmt" count="11"/>
+      <line num="50" type="stmt" count="11"/>
+      <line num="52" type="stmt" count="11"/>
+      <metrics loc="56" ncloc="56" classes="1" methods="4" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="15" coveredstatements="14" elements="19" coveredelements="17"/>
+    </file>
+    <metrics files="3" loc="156" ncloc="154" classes="3" methods="14" coveredmethods="10" conditionals="0" coveredconditionals="0" statements="39" coveredstatements="35" elements="53" coveredelements="45"/>
+  </project>
+</coverage>
