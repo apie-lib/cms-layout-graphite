@@ -1,5 +1,5 @@
 <gr-field-group label="{{ property('name') }}" style="box-shadow: var(--gr-shadow-x-large); width: 100%">
-  <gr-button disabled class="unhandled-add-to-list-button" variant="secondary" data-template="{{ component('__proto__')|e }}">
+  <gr-button disabled class="unhandled-add-to-list-button" variant="secondary" data-template="{{ component('__PROTO__')|e }}">
     <ion-icon name="add-circle-outline"></ion-icon> Add
   </gr-button>
   <gr-input placeholder="record to add" pattern="^[a-zA-Z0-9]+$" name="internal-{{ property('name') }}" ></gr-input>
