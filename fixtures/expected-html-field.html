@@ -24,7 +24,6 @@ if (!window.loadedHTMLField) {
             textarea.classList.remove('unhandled-editor');
             stylo.addEventListener('updateParagraphs', function (ev) {
                 const newHTML = article.innerHTML;
-                console.log(newHTML);
                 textarea.textContent = newHTML;
             })
         })
