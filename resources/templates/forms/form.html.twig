@@ -19,6 +19,6 @@
   {% if property('validationErrors') is not empty %}
   elm.validationErrors = {{ property('validationErrors') | safe_json_encode }};
   {% endif %}
-}(document.querySelector('apie-ionic-form.unhandled-form')));
+}(document.querySelector('apie-graphite-form.unhandled-form')));
 </script>
 {% endif %}
