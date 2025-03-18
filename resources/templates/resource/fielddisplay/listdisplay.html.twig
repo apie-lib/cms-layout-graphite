@@ -1,19 +1,12 @@
-<div>
-  {{ component('resourceActionList') }}
-  {% if property('list') | length > 0 %}
-  <revo-grid style="max-height: 80%"></revo-grid>
+<div style="max-width: 130vw">
+  {% if property('list')|length %}
+  <revo-grid class="unprocessed-grid" style="min-height: {{ 48 * (property('list') | length) + 70 }}px;max-height: 80%"></revo-grid>
   <script>
   (function(grid) {
     const importantNameColumns = ['displayName', 'name', 'internalName', 'shortDescription', 'description', 'productDescription', 'id'];
     function renderCell(createElement, props) {
       const value = props.model[props.prop];
-      const element = renderValue(createElement, value);
-      element.$attrs$.onClick = () => {
-        if (Object.hasOwnProperty.call(props.model, 'id')) {
-          location.href = location.protocol + '//' + location.host + location.pathname + '/' + props.model.id;
-        }
-      };
-      return element;
+      return renderValue(createElement, value);
     }
     function renderValue(createElement, value) {
       if (value === undefined || value === null) {
@@ -50,7 +43,7 @@
       }
       return createElement('div', {}, value || '');
     }
-    const columns = {{ property('columns') | safe_json_encode }}
+    const columns = {{ property('columns') | json_encode | raw }}
         .map(function (name) {
           return {
             prop: name,
@@ -59,19 +52,19 @@
             autoSize: true,
           }
         });
-    const rows = {{ property('list') | safe_json_encode }};
-    // grid.theme = 'material';
+    const rows = {{ property('list') | json_encode | raw }};
+    grid.classList.remove('unprocessed-grid');
+    grid.theme = 'material';
     grid.columns = columns;
     grid.source = rows;
     grid.readonly = true;
-    grid.autoresize = true;
+    grid.resize = true;
     grid.autoSizeColumn = {
       mode: 'autoSizeOnTextOverlap'
     };
-  })(document.querySelector('revo-grid'))
+  })(document.querySelector('revo-grid.unprocessed-grid'))
   </script>
   {% else %}
-  No records found!
+    List is empty.
   {% endif %}
-  {{ component('pagination') }}
 </div>
